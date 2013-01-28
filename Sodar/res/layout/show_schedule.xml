@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/linearLayout1"
+	android:paddingLeft="25sp" 
+	android:paddingRight="25sp" 
+	android:paddingTop="20sp" 
+	android:scrollbars="vertical" 
+	android:visibility="visible" 
+	android:background="#284A90" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" android:orientation="vertical">
+	
+	<RelativeLayout 
+    	android:id="@+id/liner_show_schedule" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_marginBottom="10sp">
+    	
+        <ImageView 
+        	android:id="@+id/imageView1" 
+        	android:layout_height="50sp" 
+        	android:layout_width="50sp"
+        	android:src="@drawable/mschedule">
+        </ImageView>
+        
+        <TextView 
+        	android:text="類別"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/type"
+        	android:layout_gravity="center" 
+        	android:layout_marginLeft="10sp" 
+        	android:layout_alignTop="@+id/imageView1"
+        	android:layout_toRightOf="@+id/imageView1">
+        </TextView>
+        
+        <TextView 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/event_type"
+        	android:layout_gravity="center" 
+        	android:layout_marginLeft="10sp" 
+        	android:textSize="15sp"
+        	android:layout_alignBottom="@+id/type" 
+        	android:layout_alignTop="@+id/type"
+        	android:layout_toRightOf="@+id/type">
+        </TextView>
+        
+        <TextView 
+        	android:text="標題"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/title"
+        	android:layout_gravity="center" 
+        	android:layout_marginLeft="10sp" 
+        	android:layout_alignBottom="@+id/imageView1"
+        	android:layout_toRightOf="@+id/imageView1">
+        </TextView>
+        
+        <TextView 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/event_title"
+        	android:layout_gravity="center" 
+        	android:layout_marginLeft="10sp" 
+        	android:textSize="15sp"
+        	android:layout_alignBottom="@+id/title"
+        	android:layout_alignTop="@+id/title"
+        	android:layout_toRightOf="@+id/title">
+        </TextView>
+        
+	</RelativeLayout>
+	
+	<RelativeLayout 
+    	android:id="@+id/linearLayout3" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:layout_marginBottom="10sp">
+    	
+        <ImageView 
+        	android:id="@+id/imageView2" 
+        	android:layout_height="50sp" 
+        	android:layout_width="50sp">
+        </ImageView>
+        
+        <TextView 
+        	android:text="姓名"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/name"
+        	android:layout_gravity="center" 
+        	android:layout_marginLeft="10sp" 
+        	android:layout_alignTop="@+id/imageView2"
+        	android:layout_toRightOf="@+id/imageView2">
+        </TextView>
+        
+        <TextView 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/user_name"
+        	android:layout_gravity="center" 
+        	android:layout_marginLeft="10sp" 
+        	android:textSize="15sp"
+        	android:layout_alignBottom="@+id/name" 
+        	android:layout_alignTop="@+id/name"
+        	android:layout_toRightOf="@+id/name">
+        </TextView>
+        
+        <TextView 
+        	android:text="電話"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/phone"
+        	android:layout_gravity="center" 
+        	android:layout_marginLeft="10sp" 
+        	android:layout_alignBottom="@+id/imageView2"
+        	android:layout_toRightOf="@+id/imageView2">
+        </TextView>
+        
+        <TextView 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/user_phone"
+        	android:layout_gravity="center" 
+        	android:layout_marginLeft="10sp" 
+        	android:textSize="15sp"
+        	android:layout_alignBottom="@+id/phone"
+        	android:layout_alignTop="@+id/phone"
+        	android:layout_toRightOf="@+id/phone">
+        </TextView>
+        
+	</RelativeLayout>
+	
+	<LinearLayout 
+    	android:id="@+id/linearLayout4" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:layout_marginBottom="10sp">
+        
+        <TextView 
+        	android:text="開始時間"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/start"
+        	android:layout_gravity="center">
+        </TextView>
+        
+        <TextView 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/start_time"
+        	android:layout_gravity="center" 
+        	android:layout_marginLeft="10sp" 
+        	android:textSize="15sp">
+        </TextView>
+        
+	</LinearLayout>
+	
+	<LinearLayout 
+    	android:id="@+id/linearLayout6" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:layout_marginBottom="10sp">
+        
+        <TextView 
+        	android:text="結束時間"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/end"
+        	android:layout_gravity="center">
+        </TextView>
+        
+        <TextView 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/end_time"
+        	android:layout_gravity="center" 
+        	android:layout_marginLeft="10sp" 
+        	android:textSize="15sp">
+        </TextView>
+        
+	</LinearLayout>
+	
+	<LinearLayout 
+    	android:id="@+id/linearLayout9" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:layout_marginBottom="10sp">
+        
+        <TextView 
+        	android:text="地       點"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/place"
+        	android:layout_gravity="center">
+        </TextView>
+        
+        <TextView 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/placedisplay"
+        	android:layout_gravity="center" 
+        	android:layout_marginLeft="10sp" 
+        	android:textSize="15sp">
+        </TextView>
+        
+	</LinearLayout>
+	
+	<LinearLayout 
+    	android:id="@+id/linearLayout5" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:layout_marginBottom="10sp">
+        
+        <TextView 
+        	android:text="描       述"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/description"
+        	android:layout_gravity="center">
+        </TextView>
+        
+        <TextView 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/description_content"
+        	android:layout_gravity="center" 
+        	android:layout_marginLeft="10sp" 
+        	android:textSize="15sp">
+        </TextView>
+        
+	</LinearLayout>
+	<LinearLayout android:id="@+id/linear_editbutton"
+	android:layout_height="fill_parent" android:layout_width="fill_parent"></LinearLayout>
+	
+	
+</LinearLayout>

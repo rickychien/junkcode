@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical" 
+	android:visibility="visible" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" android:background="#EEEEEE">
+	
+	<RelativeLayout 
+		android:id="@+id/relativeLayout1"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:baselineAligned="true"
+		android:paddingLeft="4sp" 
+		android:paddingRight="4sp" 
+		android:paddingTop="5sp" android:background="#284A90">
+		
+    	<Button 
+    		android:layout_height="40sp" 
+    		android:id="@+id/display_all_list" 
+    		android:layout_weight="1" 
+    		android:text="顯示全部" 
+    		android:layout_width="wrap_content">
+    	</Button>
+    	
+    	<Button 
+    		android:layout_height="40sp" 
+    		android:id="@+id/display_friend_list"
+    		android:layout_toRightOf="@id/display_all_list"
+    		android:layout_weight="1" 
+    		android:layout_width="wrap_content" android:text="顯示打卡">
+    	</Button>
+    	
+    	<Button 
+    		android:layout_height="40sp" 
+    		android:id="@+id/display_event_list"
+    		android:layout_toRightOf="@id/display_friend_list" 
+    		android:layout_weight="1" 
+    		android:text="顯示事件" 
+    		android:layout_width="wrap_content">
+    	</Button>
+    	
+    	<Button 
+    		android:layout_height="40sp" 
+    		android:id="@+id/change_mode_list"
+    		android:layout_toRightOf="@id/display_event_list"
+    		android:layout_weight="1" 
+    		android:text="切換地圖" 
+    		android:layout_width="wrap_content">
+    	</Button>
+    	
+	</RelativeLayout>
+	
+	<RelativeLayout 
+    	android:layout_width="fill_parent" 
+    	android:id="@+id/relativeLayout2" 
+    	android:layout_height="wrap_content">
+    	
+    	<ListView 
+    		android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/listview" android:cacheColorHint="#385AA0">
+		</ListView>
+            
+	</RelativeLayout>
+	
+</LinearLayout>

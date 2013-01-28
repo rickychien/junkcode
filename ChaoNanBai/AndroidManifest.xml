@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      android:versionCode="1"
+      android:versionName="1.0.0" package="ntou.cs.android.ChaoNanBai">
+      
+      <uses-permission android:name="android.permission.INTERNET" />
+      
+      <application android:label="@string/app_name" android:debuggable="false" android:icon="@drawable/moneygod" android:name="ChaoNanBaiApplication">
+      
+        <provider android:name="IconContentProvider" android:authorities="com.IconCP" />
+        
+        <activity android:name="ChaoNanBaiActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".CallBackActivity"
+            android:theme="@*android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="wikitudeapi.mycallbackactivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+        </activity>
+        <activity android:name="BaiBaiActivity">
+            <intent-filter>
+                <action android:name="wikitudeapi.baibaiactivity"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+        
+    </application>
+    
+    <uses-sdk android:minSdkVersion="8"/>
+    
+</manifest> 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/linearLayout_main" android:orientation="vertical"
+	android:layout_height="fill_parent" android:layout_width="fill_parent"
+	android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbars="vertical"
+	android:scrollbarStyle="insideOverlay" android:background="#284A90"
+	android:paddingLeft="15sp" android:paddingRight="15sp"
+	android:paddingTop="15sp" android:weightSum="1">
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginBottom="10sp">
+		<ImageView android:id="@+id/imageView_picSquare"
+			android:layout_height="50sp" android:layout_width="50sp"></ImageView>
+		<LinearLayout android:id="@+id/linearLayout2"
+			android:layout_width="wrap_content" android:layout_height="fill_parent"
+			android:orientation="vertical" android:layout_marginLeft="10sp">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="15sp"
+				android:id="@+id/textView_checkinAddress"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/linearLayout9"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginBottom="3sp">
+		<TextView android:text="姓名：" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/TextView02"></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/textView_name"></TextView>
+	</LinearLayout>
+		
+	<LinearLayout android:id="@+id/linearLayout3"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginBottom="3sp">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="性別：" android:id="@+id/textView_sex"></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/textView_mSex"></TextView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/linearLayout4"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginBottom="3sp">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="學歷：" android:id="@+id/textView_edu"></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/textView_mEdu"></TextView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/linearLayout5"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginBottom="3sp">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/textView_work"
+			android:text="工作："></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/textView_mWork"></TextView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/linearLayout7"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3sp">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/textView_aboutMe"
+			android:text="關於我："></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/textView_mAboutMe"></TextView>
+	</LinearLayout>
+	<LinearLayout android:layout_marginBottom="3sp" android:id="@+id/LinearLayout01" android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/TextView04" android:text="時間："></TextView>
+		<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textview_mCheckinTime"></TextView>
+	</LinearLayout>
+	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/TextView01" android:text="訊息："></TextView>
+	<EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="0.14" android:id="@+id/msg" android:inputType="none" android:focusable="false" android:layout_marginBottom="20sp">
+		<requestFocus></requestFocus>
+	</EditText>
+</LinearLayout>

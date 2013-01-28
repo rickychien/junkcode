@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_height="fill_parent" 
+android:paddingLeft="25sp" 
+android:paddingRight="25sp" 
+android:paddingTop="25sp"
+android:layout_width="fill_parent"
+android:background="#284A90">
+ 
+<LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20sp">
+	<TextView android:text="設定" android:textSize="25sp" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+</LinearLayout>
+
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15sp" android:id="@+id/relativeLayout1">
+	<TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:text="啟動通知功能" android:textSize="16sp"></TextView>
+	<CheckBox android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:id="@+id/open_notify_checkBox"></CheckBox>
+</RelativeLayout>
+
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15sp" android:id="@+id/relativeLayout2">
+	<TextView android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:text="通知模式" android:textSize="16sp"></TextView>
+	<Spinner android:layout_alignParentRight="true" android:layout_width="130sp" android:id="@+id/notify_mode_spinner" android:layout_height="wrap_content"></Spinner>
+</RelativeLayout>
+
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15sp" android:id="@+id/relativeLayout3">
+	<TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:text="搜尋範圍" android:textSize="16sp"></TextView>
+	<Spinner android:layout_alignParentRight="true" android:layout_width="130sp" android:id="@+id/notify_range_spinner" android:layout_height="wrap_content"></Spinner>
+</RelativeLayout>
+
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15sp" android:id="@+id/relativeLayout4">
+	<TextView android:text="更新頻率" android:id="@+id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:textSize="16sp"></TextView>
+	<Spinner android:layout_alignParentRight="true" android:layout_width="130sp" android:id="@+id/frequency_spinner" android:layout_height="wrap_content"></Spinner>
+</RelativeLayout>
+
+</LinearLayout>

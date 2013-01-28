@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">This activity demonstrates the basic use of Open AR.\n
+    It will open the CamView with the points of interests for New York, Tokyo, Rome, and Vienna.</string>
+    <string name="app_name">ChaoNanBaiApplication</string>
+    <string name="launch1">Launch basic AR view</string>
+    <string name="launch2">Launch with custom icons</string>
+    <string name="launch3">Launch with customized title bar</string>
+    <string name="launch4">Launch 3D view</string>
+    <string name="toast_ar_not_found">No application installed to show AR view</string>
+    <string name="callback">We are now in the callback Intent</string>
+    <string name="modelfile_not_found_title">File not found</string>
+    <string name="modelfile_not_found">The modelfile %s cannot be found. Please copy the file included in the WIKITUDE API distribution package onto your SD card.</string>
+</resources>

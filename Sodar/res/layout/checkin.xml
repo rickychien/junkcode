@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/linearLayout1"
+	android:paddingLeft="25sp" 
+	android:paddingRight="25sp" 
+	android:paddingTop="25sp" 
+	android:orientation="vertical" 
+	android:background="#284A90" 
+	android:layout_height="fill_parent" 
+	android:layout_width="fill_parent">
+	
+    <LinearLayout 
+    	android:id="@+id/linearLayout2" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_marginBottom="10sp">
+    	
+        <ImageView 
+        	android:id="@+id/imageView1" 
+        	android:layout_height="70sp" 
+        	android:layout_width="70sp"
+        	android:src = "@drawable/checkin">
+        </ImageView>
+        
+        <TextView 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/textView1" 
+        	android:text="Check-In"
+        	android:textSize="20sp"
+        	android:layout_gravity="center" 
+        	android:layout_marginLeft="10sp">
+        </TextView>
+        
+	</LinearLayout>
+	
+	<TextView 
+		android:id="@+id/textView2" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="描述：" 
+		android:layout_marginBottom="5sp">
+	</TextView>
+	
+    <EditText 
+    	android:id="@+id/description" 
+    	android:layout_width="fill_parent" 
+    	android:inputType="textMultiLine" 
+    	android:layout_height="wrap_content" 
+    	android:lines="3" 
+    	android:hint="輸入想留下的訊息..." 
+    	android:layout_marginBottom="10sp">
+        <requestFocus></requestFocus>
+	</EditText>
+	
+	<Button 
+		android:id="@+id/checkin" 
+		android:layout_height="wrap_content" 
+		android:text="Check In" 
+		android:layout_width="fill_parent">
+	</Button>
+	
+</LinearLayout>

@@ -1,0 +1,6 @@
+*.o
+*.app
+*.xcodeproj
+*.pro
+*.plist
+moc_*

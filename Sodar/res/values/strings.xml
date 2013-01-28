@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sodar</string>
+    <color name="selected">#FF8000</color>
+    <color name="bg">#EEEEEE</color>
+</resources>

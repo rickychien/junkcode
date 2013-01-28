@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/linearLayout1"
+	android:paddingLeft="25sp" 
+	android:paddingRight="25sp" 
+	android:paddingTop="25sp" 
+	android:orientation="vertical" 
+	android:layout_height="fill_parent" 
+	android:layout_width="fill_parent"
+	android:gravity="center" android:background="#0591D9">
+    
+    <TextView 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/sodar" 
+        android:text="Sodar"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textSize="50sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/imageView1">
+	</TextView>
+    
+    <TextView 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/title" 
+        android:text="The location-based social"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/sodar"  
+        android:layout_marginBottom="60sp">
+	</TextView>
+    
+    <ImageButton
+    	android:id="@+id/button1"
+    	android:layout_below="@+id/title"  
+    	android:layout_alignLeft="@+id/title" 
+    	android:layout_alignRight="@+id/title" 
+    	android:layout_centerHorizontal="true" 
+    	android:layout_centerVertical="true"
+    	android:adjustViewBounds ="true" android:background="@drawable/login_button" android:layout_height="36dp" android:layout_width="137dp">
+    </ImageButton>
+    
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:layout_width="fill_parent"
+	android:background="#ffffffff" android:orientation="vertical"
+	android:id="@+id/dialog">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView_declaration" android:text="提供電話號碼可以讓使用者與您取得聯絡，如果不需要此功能請留空。" android:textStyle="bold" android:textSize="20sp" android:textColor="#EE123123" android:padding="10sp"></TextView>
+	<TextView android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:id="@+id/textView_phone"
+		android:text="電話：" />
+	<EditText android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:id="@+id/editView_phone"
+		android:minWidth="100dip" android:maxLines="1" android:lines="1" android:inputType="phone"/>
+</LinearLayout>

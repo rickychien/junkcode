@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:visibility="visible" 
+	android:background="#284A90" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+	
+	<RelativeLayout 
+		android:id="@+id/relativeLayout1"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:baselineAligned="true"
+		android:paddingLeft="4sp" 
+		android:paddingRight="4sp" 
+		android:paddingTop="5sp">
+		
+    	<Button 
+    		android:layout_height="40sp" 
+    		android:id="@+id/display_all" 
+    		android:layout_weight="1" 
+    		android:text="顯示全部" 
+    		android:layout_width="wrap_content">
+    	</Button>
+    	
+    	<Button 
+    		android:layout_height="40sp" 
+    		android:id="@+id/display_friend"
+    		android:layout_toRightOf="@id/display_all"
+    		android:layout_weight="1" 
+    		android:layout_width="wrap_content" android:text="顯示打卡">
+    	</Button>
+    	
+    	<Button 
+    		android:layout_height="40sp" 
+    		android:id="@+id/display_event"
+    		android:layout_toRightOf="@id/display_friend" 
+    		android:layout_weight="1" 
+    		android:text="顯示事件" 
+    		android:layout_width="wrap_content">
+    	</Button>
+    	
+    	<Button 
+    		android:layout_height="40sp" 
+    		android:id="@+id/change_mode"
+    		android:layout_toRightOf="@id/display_event"
+    		android:layout_weight="1" 
+    		android:text="切換列表" 
+    		android:layout_width="wrap_content">
+    	</Button>
+    	
+	</RelativeLayout>
+	
+	<RelativeLayout 
+    	android:layout_width="fill_parent" 
+    	android:id="@+id/relativeLayout2" 
+    	android:layout_height="wrap_content">
+    	
+    	<com.google.android.maps.MapView
+    		android:id="@+id/mapview" 
+            android:layout_width="fill_parent"
+            android:clickable="true"
+            android:apiKey="0oTGCYC2xeUgJyGRHTJXfX8v9JHvGtzaxAFCfXw" 
+            android:layout_height="fill_parent"/>
+            
+	</RelativeLayout>
+	
+	<TableRow 
+		android:id="@+id/tableRow1" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:layout_alignParentBottom="true"
+		android:paddingLeft="4sp" 
+		android:paddingRight="4sp" 
+		android:paddingTop="5sp">
+		
+    	<ImageButton 
+    		android:layout_width="wrap_content" 
+    		android:layout_gravity="top" 
+    		android:layout_weight="1" 
+    		android:id="@+id/arrow_left" 
+    		android:layout_height="40sp" 
+    		android:src="@drawable/arrowleft">
+    	</ImageButton>
+    	
+    	<ImageButton 
+    		android:layout_width="wrap_content" 
+    		android:layout_weight="1" 
+    		android:id="@+id/arrow_right" 
+    		android:layout_height="40sp" 
+    		android:src="@drawable/arrowright">
+    	</ImageButton>
+    	
+	</TableRow>
+	
+</LinearLayout>
